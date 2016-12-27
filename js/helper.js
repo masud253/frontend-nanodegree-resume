@@ -19,6 +19,25 @@ var role = "Web Developer";
 var formattedRole = HTMLheaderRole.replace("%data%", role);
 $("#header").append(formattedName);
 $("#header").append(formattedRole);
+var bio = {
+    "name": "MD.Masud Ul Alam",
+    "role": "Web Developer",
+    "contacts": {
+    "mobile": "+8801787058876",
+    "email": "masudchamon@gmail.com",
+    "github": "masud253",
+    "location": "Bangladesh"
+    },
+    "skills": [
+    HTML, CSS, JavaScript, Programming in C
+    ],
+    "age": 34
+};
+$("#main").append(bio.name);
+$("#main").append(bio.role);
+$("#main").append(bio.contacts);
+$("#main").append(bio.skills);
+$("#main").append(bio.role);
 var HTMLcontactGeneric = '<li class="flex-item"><span class="orange-text">%contact%</span><span class="white-text">%data%</span></li>';
 var HTMLmobile = '<li class="flex-item"><span class="orange-text">mobile</span><span class="white-text">%data%</span></li>';
 var HTMLemail = '<li class="flex-item"><span class="orange-text">email</span><span class="white-text">%data%</span></li>';
